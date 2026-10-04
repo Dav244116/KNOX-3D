@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>KNOX 3D — Digital World</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+</head>
+
+<body>
+
+  <!-- 3D Canvas -->
+  <canvas id="threeCanvas"></canvas>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-logo">KNOX</div>
+    <div class="loader-bar">
+      <span></span>
+    </div>
+    <p>INITIALIZING DIGITAL WORLD...</p>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">KNOX<span>3D</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#world">World</a>
+    </nav>
+
+    <button id="exploreBtn" class="nav-btn">EXPLORE</button>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+
+    <section class="hero">
+      <div class="hero-content">
+
+        <p class="eyebrow">WELCOME TO THE FUTURE</p>
+
+        <h1>
+          ENTER THE
+          <span>DIGITAL WORLD</span>
+        </h1>
+
+        <p class="description">
+          An interactive 3D experience created for the next generation.
+          Move your mouse, touch the screen and explore the world.
+        </p>
+
+        <div class="buttons">
+          <button id="enterBtn" class="primary-btn">
+            ENTER WORLD
+            <span>→</span>
+          </button>
+
+          <button id="infoBtn" class="secondary-btn">
+            DISCOVER
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="content-section">
+      <div class="glass-card">
+        <p class="section-label">01 — ABOUT</p>
+        <h2>BUILT FOR<br><span>EXPLORATION.</span></h2>
+        <p>
+          KNOX 3D combines a futuristic interface with an interactive
+          three-dimensional environment. This is only the beginning.
+        </p>
+      </div>
+    </section>
+
+    <!-- World -->
+    <section id="world" class="content-section">
+      <div class="glass-card right">
+        <p class="section-label">02 — THE WORLD</p>
+        <h2>LOOK<br><span>AROUND.</span></h2>
+        <p>
+          The environment responds to your movement. Explore the particles,
+          glowing core and rotating structures surrounding you.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Controls -->
+  <div class="controls">
+    <span>●</span>
+    MOVE TO EXPLORE
+  </div>
+
+  <!-- Info Popup -->
+  <div id="infoPanel" class="info-panel">
+    <button id="closeInfo">×</button>
+
+    <p class="section-label">KNOX 3D</p>
+
+    <h2>WELCOME.</h2>
+
+    <p>
+      This interactive experience runs directly in your browser.
+      Try moving your mouse or dragging your finger across the screen.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
